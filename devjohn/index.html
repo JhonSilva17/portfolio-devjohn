@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio - John Silva</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logomarca"><span class="color-blue">Dev.</span> John</a>
+            </div> <!--LOGO-->
+            <nav id="navigation">
+                <div class="icon">
+                    <img onclick="Menu.openMenu()" src="./public/assets/img/icon-menu.svg" alt="">
+                </div>
+                <ul id="menujs" onclick="Menu.closeMenu()">
+                    <li><span onclick="Menu.closeMenu()" class="icon"><img src="./public/assets/img/close.svg" alt=""></span></li>
+                    <li><a href="#projects" class="js-scrollSuave">Projetos</a></li>
+                    <li><a href="#about" class="js-scrollSuave">Sobre</a></li>
+                    <li><a href="#contact" class="js-scrollSuave">Contato</a></li>
+                </ul>
+            </nav> <!--NAVIGATION-->
+        </div> <!--CONTAINER-->
+    </header> <!--HEADER-->
+
+    <main id="intro">
+        <div class="container">
+            <div id="intro-content">
+                <h1>John Silva</h1>
+                <p>Desenvolvedor front-end</p>
+                <a href="#projects" class="background-blue js-scrollSuave">Ver Projetos</a>
+            </div> <!--INTRO-CONTENT-->
+            <div id="intro-img">
+                <img src="./public/assets/img/ilustration-intro.png" alt="Ilustration">
+            </div>
+        </div> <!--CONTAINER-->
+    </main>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projetos</h2>
+            <p>sites e aplicações desenvolvidas por mim</p>
+
+            <div class="container-card">
+                <div class="card-item">
+                    <h3>Snapshot</h3>
+                    <p>Site desenvolvido para aplicação de conhecimentos de tecnologias web e grid layout.</p>
+                    <a href="#" class="btn btn-card">
+                        <span> <i class="fas fa-link"></i></span>
+                        Website
+                    </a>
+                    <div class="techs">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </div>
+                </div><!--CARD-ITEM-->
+
+                <div class="card-item">
+                    <h3>Todo List</h3>
+                    <p>Aplicação desenvolvida para o auxílio de atividades cotidianas e para treino de Javascript.</p>
+                    <a href="#" class="btn btn-card">
+                        <span> <i class="fas fa-link"></i></span>
+                        Aplicação
+                    </a>
+                    <div class="techs">
+                        <ul>
+                            <li>Javascript</li>
+                            <li class="back-none"><a href="#" class="code">Ver código <span><i class="fab fa-github"></i></span></a></li>
+                        </ul>
+                    </div> <!--techs-->
+                </div> <!--CARD-ITEM-->
+
+                <div class="card-item">
+                    <h3>My Gallery</h3>
+                    <p>Site feito para testar habilidades no grid layout. Desafio feito pela devchallenges</p>
+                    <a href="#" class="btn btn-card">
+                        <span> <i class="fas fa-link"></i></span>
+                        Website
+                    </a>
+                    <div class="techs">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div> <!--techs-->
+                </div> <!--CARD-ITEM-->
+
+            </div> <!--CONTAINER-CARD-->
+        </div> <!--CONTAINER-->
+    </section> <!--PROJECTS-->
+
+    <section id="about">
+        <h2>Sobre</h2>
+        <p>uma breve descrição sobre mim e como e como iniciei minha carreira</p>
+        <div class="container">
+            <div class="about-img">
+                <img src="./public/assets/img/foto-john.jpg" alt="Foto de John Silva">
+            </div> <!--ABOUT-IMG-->
+            <div class="about-content">
+                <p>Olá, meu nome é Jhonata, mas todos me conhecem como John. Tenho 18 anos de idade e sempre tive a vontade de criar coisas do zero. Ver o que eu criei funcionar corretamente, bombardeava meu cérebro com dopamina.</p>
+                <p>Comecei a estudar programação web em 2020, logo após o início da quarentena. Juntei a minha vontade de criar, com a paixão por tecnologia, e aqui estou eu!</p>
+                <h3>Tecnologias que tenho experiência: </h3>
+                <ul>
+                    <li>Javascript (ES6+)</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </div> <!--ABOUT-CONTENT-->
+        </div> <!--CONTAINER-->
+    </section> <!--ABOUT-->
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>gostou do meus projetos? Mande-me um e-mail para conversarmos</p>
+            <form action="POST">
+                <div class="flex-input">
+                    <div class="flex-item">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+                    <div class="flex-item">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+                <label for="msg">Mensagem</label>
+                <textarea name="msg" id="msg"></textarea>
+                <button class="background-blue">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logomarca"><span class="color-blue">Dev.</span> John</a>
+            </div> <!--LOGO-->
+            <div class="redes">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div> <!--CONTAINER-->
+    </footer>
+
+    <script src="./public/js/script.js"></script>
+</body>
+</html>
