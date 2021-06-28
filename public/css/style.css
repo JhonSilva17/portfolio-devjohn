@@ -5,10 +5,13 @@
     --color-blue: #47B4EB;
     --color-blue-animation: #6072aa;
     --color-border: #455b8d;
-    --color-card: #324167;
-    --color-back-techs: #2B3754;
+    --color-card: #374a7a;
+    --color-back-techs: #344469;
     --color-gray: #ffffffa6;
     --back-footer: #1F2A47;
+    --linear-gradient-body: linear-gradient(to right bottom, #2d3c64,
+    #3f5b9b);
+    --linear-gradient-footer: linear-gradient(to right, #1F2A47,#43578f);
 }
 
 * {
@@ -18,7 +21,7 @@
  } 
 
 body {
-    background-color: var(--background);
+    background-image: var(--linear-gradient-body);
     font-size: 16px;
 }
 
@@ -185,7 +188,15 @@ input,button,textarea {
 
     display: flex;
     flex-direction: column;
+    transition: all .2s linear;
+    border: 2px solid var(--color-card);
 }
+
+#projects .container-card .card-item:hover {
+    transform: translateY(-4px);
+    border: 2px solid var(--color-blue);
+}
+
 #projects .container-card .card-item.ativo {
     transform:scale(1.05) ;
 }
@@ -316,7 +327,7 @@ input,button,textarea {
     flex: 1 1 240px;
 }
 #contact input {
-    border: 2px solid var(--color-card);
+    border: 2px solid #415380;
     width: calc(100% - 1em);
     border-radius: .25em;
     background: var(--color-card);
@@ -330,7 +341,7 @@ input,button,textarea {
 }
 #contact textarea {
     width: 100%;
-    border: 2px solid var(--color-card);
+    border: 2px solid #415380;
     background: var(--color-card);
     height: 260px;
     padding: .625em 1em;
@@ -359,7 +370,7 @@ input,button,textarea {
 
 /* FOOTER ===================== */
 #footer {
-    background-color: var(--back-footer);
+    background-image: var(--linear-gradient-footer);
     padding: 1.5em 0;
 }
 
