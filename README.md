@@ -8,7 +8,7 @@ Atrair pessoas que estejam interessadas em meu trabalho.
 
 ## :seedling: Requisitos Mínimos
 
-
+Ter o Javascript habilitado em seu navegador. 
 
 ## :rocket: Tecnologias Utilizadas 
 
