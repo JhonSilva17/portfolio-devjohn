@@ -26,3 +26,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 - Faça um commit com suas mudanças
 - 'Push' a sua branch
 - Ir em Pull Requests do projeto original e criar uma pull request com o seu commit
+
+## :link: Visite meu site
+
+[Dev.John](https://jhonsilva17.github.io/portfolio-devjohn/)
