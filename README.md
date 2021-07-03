@@ -16,7 +16,7 @@ Ter o Javascript habilitado em seu navegador.
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias
 
-- HTML, CSS e Javascript
+- HTML, CSS, Sass e Javascript
 
 ## :link: Como contribuir 
 
