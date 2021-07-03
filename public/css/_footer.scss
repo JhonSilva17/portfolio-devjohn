@@ -1,0 +1,23 @@
+#footer {
+    background-image: $linear-gradient-footer;
+    padding: 1.5em 0;
+
+    .container {
+        @extend .flex;
+        flex-wrap: wrap;
+
+        ul li {
+            display: inline-block;
+            margin-left: .2em;
+
+            a {
+                font-size: 1.5em;
+                padding: .425em;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

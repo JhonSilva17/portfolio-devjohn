@@ -1,0 +1,147 @@
+
+$linear-gradient-button:  linear-gradient(to right, #47B4EB, #ABCCDC);
+$linear-gradient-body: linear-gradient(to right bottom, #2d3c64,
+#3f5b9b);
+$linear-gradient-footer: linear-gradient(to right, #1F2A47,#43578f);
+
+$primary-color: #47B4EB;
+$secondary-color: #24345B;
+$background-menu: #314679;
+$color-white: #ffffff;
+$color-blue-animation: #6072aa;
+$color-border: #455b8d;
+$color-card: #374a7a;
+$color-back-techs: #344469;
+$color-gray: #ffffffa6;
+$back-footer: #1F2A47;
+
+@mixin transition() {
+    transition: all .3s ease;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.border-radius {
+    border-radius: .25em;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+ } 
+
+body {
+    background-image: $linear-gradient-body;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: $color-white;
+
+    @include transition()
+}
+
+ul {
+    list-style: none;
+}
+
+a,p,small,li,label,input,textarea {
+    font: normal 400 1em/1.5em "Nunito", 'Trebuchet MS', sans-serif;
+}
+
+h1,h2,h3 {
+    font: normal 600 2em/1em "Ubuntu", verdana, sans-serif;
+}
+
+section h2 {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: .35em;
+}
+
+input,button,textarea {
+    outline: none;
+    border: none;
+}
+
+/* CLASSES GERAIS ============================= */
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.color-blue {
+    color: $primary-color
+}
+
+.background-blue {
+    background: $primary-color;
+}
+
+.icon {
+    display: none;
+}
+
+.btn {
+    background: $linear-gradient-button;    
+    display: block;
+    text-align: center;
+    padding: .625em 0;
+    @extend .border-radius;
+    font-size: 1.125em;
+
+    @include transition();
+}
+
+.techs ul li {
+    display: inline-block;
+    background: $color-back-techs;
+    color: $color-white;
+    padding: .2em .5em;
+    @extend .border-radius;
+    font-size: .875em;
+    margin-bottom: .5em;
+
+    @include transition();
+}
+
+.logo a.logomarca {
+    font: normal 600 2em/1em "Ubuntu", verdana, sans-serif;
+}
+
+
+@keyframes pulso {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes surgirMenu {
+    from {
+        opacity: .5;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+

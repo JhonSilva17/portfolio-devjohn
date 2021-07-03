@@ -1,0 +1,62 @@
+#about {
+    margin: 6em 0 4em;
+
+    > p {    
+        text-align: center;
+        color: $color-gray;
+        font-weight: 400;
+        max-width: 30%;
+        margin: 0 auto;
+        font-size: .875em;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 40px;
+    
+        margin-top: 4em;
+
+        .about-img {
+            border: 4px solid $primary-color;
+            @extend .border-radius;
+            height: 240px;
+
+            img {
+                position: relative;
+                bottom: 15px;
+                right: 8px;
+            }
+        }
+
+        .about-content {
+             p {
+                color: $color-gray;
+                margin-bottom: 1em;
+            }
+
+            h3 {
+                color: $color-white;
+                font-size: 1.125em;
+                font-weight: 400;
+                margin-bottom: .625em;
+            }
+
+            .techs {
+                margin-top: 1em;
+
+                ul {
+                    li + li {
+                        margin-left: 1em;
+                    }
+
+                    li {
+                        &:hover {
+                            transform: translateY(-4px);
+                        }
+                    }
+                } 
+            }  
+        }
+    }
+}

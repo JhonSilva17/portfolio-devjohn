@@ -1,0 +1,80 @@
+#projects {
+    margin: 20% 0 4em;
+
+    .container > p {
+        text-align: center;
+        color: $color-gray;
+        font-size: .875em;
+        font-weight: 400;
+    }
+
+    .container-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5em;
+        margin-top: 3em;
+
+        .card-item {
+            background: $color-card;
+            padding: 1.5em;
+            border-radius: .5em;
+            margin-bottom: 1em;
+        
+            display: flex;
+            flex-direction: column;
+        
+            @include transition();
+        
+            border: 2px solid $color-card;
+        
+            &:hover {
+                transform: translateY(-4px);
+                border: 2px solid $primary-color;
+            }
+
+            &.ativo {
+                transform:scale(1.05) ;
+            }
+
+            h3 {
+                font-size: 1.5em;
+                color: $color-white;
+                flex: 1;
+            }
+
+            p {
+                color: rgba(255, 255, 255, 0.7);
+                margin: 1.5em 0;
+                flex: 1;
+            }
+
+            a.btn-card:hover {
+                background: linear-gradient(to right, #3ca6db, #96bacc);
+            }
+
+            .techs {
+                flex: 1;
+                
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    margin-top: 2.5em;
+
+                    li a.code:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+
+                .back-none {
+                    background: none;
+                    opacity: .8;    
+                }
+                
+            }
+            
+        }
+    }
+    
+} 

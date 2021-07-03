@@ -1,0 +1,40 @@
+#header {
+    padding: 2em 0;
+
+    &.ativo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10001;
+        background: $background-menu;
+        padding: 1em 0;
+    
+        -webkit-animation: surgirMenu .3s;
+        -moz-animation: surgirMenu .3s;
+        animation: surgirMenu .3s;
+    } 
+
+    .container {
+       @extend .flex ;
+    }
+    
+    #navigation ul li {
+        display: inline-block;
+        margin-left: .875em;
+
+        a {
+            font-size: 1.125em;
+            padding: .5em;
+            color: $color-white;
+
+            &:hover {
+                color: $primary-color;
+            }
+
+            &.ativo {
+                color: $primary-color;
+            }   
+        }
+    }
+}

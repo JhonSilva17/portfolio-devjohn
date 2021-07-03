@@ -1,0 +1,85 @@
+#contact {
+        p {
+            text-align: center;
+            color: $color-gray;
+            font-weight: 400;
+            max-width: 31%;
+            margin: 0 auto;
+            font-size: .875em;
+        }
+
+        form {
+            margin: 4em 0;
+
+            label {
+                display: block;
+                color: $color-white;
+                margin-bottom: .5em;
+                font-size: 1.125em;
+            }
+
+            .flex-input {
+                @extend .flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-bottom: 2em;
+
+                .flex-item {
+                    flex: 1 1 240px;
+
+                    input:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        
+            input {
+                border: 2px solid #415380;
+                width: calc(100% - 1em);
+                border-radius: .25em;
+                background: $color-card;
+                padding: .625em 1em;
+                color: $color-gray;
+                font-size: .875em;
+                margin-right: 1em;
+
+                &:focus {
+                    border: 2px solid $primary-color;
+                }
+            }
+
+            textarea {
+                width: 100%;
+                border: 2px solid #415380;
+                background: $color-card;
+                height: 260px;
+                padding: .625em 1em;
+                color: $color-gray;
+                border-radius: .25em;
+
+                &:focus {
+                    border: 2px solid $primary-color;
+                }
+            }
+
+            button {
+                color: $color-white;
+                font-size: 1em;
+                font-weight: 600;
+                cursor: pointer;
+                padding: .625em 0;
+                display: block;
+                width: 100px;
+                border-radius: .25em;
+                margin-top: 2em;
+            
+                @include transition();
+
+                &:hover {
+                    background: #1f7aa7;
+                }
+            }
+           
+        }
+}
+

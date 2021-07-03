@@ -1,0 +1,32 @@
+#intro {
+    margin-top: 5em;
+
+    .container {
+       @extend .flex;
+    }
+    #intro-content {
+        h1 {
+            font-size: 4em;
+            color: $color-white;
+        }
+
+        p {
+            font-size: 1.5em;
+            color: #b1e0f8;
+        }
+
+        a.background-blue {
+            border-radius: .25em;
+            display: inline-block;
+            margin-top: 3em;
+            width: 160px;
+            text-align: center;
+            font-size: 1.125em;
+            padding: .625em;
+        }
+    }
+
+    #intro-img {
+        width: 50%;
+    }
+}
