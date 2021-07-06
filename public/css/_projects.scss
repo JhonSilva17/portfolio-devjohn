@@ -16,7 +16,7 @@
 
         .card-item {
             background: $color-card;
-            padding: 1.5em;
+            padding: 1.25em 1em;
             border-radius: .5em;
             margin-bottom: 1em;
         
@@ -29,11 +29,16 @@
         
             &:hover {
                 transform: translateY(-4px);
+                transform: scale(1.02);
+                box-shadow: 
+                10px 10px 6px rgba(0, 0, 0, .05),
+                -10px 10px 6px rgba(0, 0, 0, .05)
+                ;
                 border: 2px solid $primary-color;
             }
 
             &.ativo {
-                transform:scale(1.05) ;
+                transform:scale(1) ;
             }
 
             h3 {

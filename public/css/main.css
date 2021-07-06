@@ -220,8 +220,8 @@ input, button, textarea {
 }
 
 #projects .container-card .card-item {
-  background: #374a7a;
-  padding: 1.5em;
+  background: #3d5080;
+  padding: 1.25em 1em;
   border-radius: .5em;
   margin-bottom: 1em;
   display: -webkit-box;
@@ -233,18 +233,22 @@ input, button, textarea {
           flex-direction: column;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
-  border: 2px solid #374a7a;
+  border: 2px solid #3d5080;
 }
 
 #projects .container-card .card-item:hover {
   -webkit-transform: translateY(-4px);
           transform: translateY(-4px);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.05), -10px 10px 6px rgba(0, 0, 0, 0.05);
+          box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.05), -10px 10px 6px rgba(0, 0, 0, 0.05);
   border: 2px solid #47B4EB;
 }
 
 #projects .container-card .card-item.ativo {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 #projects .container-card .card-item h3 {
@@ -397,7 +401,7 @@ input, button, textarea {
   border: 2px solid #415380;
   width: calc(100% - 1em);
   border-radius: .25em;
-  background: #374a7a;
+  background: #3d5080;
   padding: .625em 1em;
   color: #ffffffa6;
   font-size: .875em;
@@ -411,7 +415,7 @@ input, button, textarea {
 #contact form textarea {
   width: 100%;
   border: 2px solid #415380;
-  background: #374a7a;
+  background: #3d5080;
   height: 260px;
   padding: .625em 1em;
   color: #ffffffa6;
