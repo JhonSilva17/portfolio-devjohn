@@ -34,10 +34,10 @@
             }
         
             input {
-                border: 2px solid #415380;
+                border: 2px solid $color-input;
                 width: calc(100% - 1em);
                 border-radius: .25em;
-                background: $color-card;
+                background: $color-input;
                 padding: .625em 1em;
                 color: $color-gray;
                 font-size: .875em;
@@ -50,8 +50,8 @@
 
             textarea {
                 width: 100%;
-                border: 2px solid #415380;
-                background: $color-card;
+                border: 2px solid $color-input;
+                background: $color-input;
                 height: 260px;
                 padding: .625em 1em;
                 color: $color-gray;
