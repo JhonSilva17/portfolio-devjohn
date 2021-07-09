@@ -27,14 +27,14 @@ window.addEventListener('scroll', surgirMenu)
 const scrollReveal = ScrollReveal({
     origin: top,
     distance: '20px',
-    duration: 500,
+    duration: 700,
     reset: true,
 })
 
 scrollReveal.reveal(`
     #intro, #intro h1,
     #projects, #projects h2, #projects .init-p, #projects .container-card,
-    #about, #about img, #about p, #about ul, #about h3,
+    #about, #about img, #about p, #about h3, #about .techs,
     #contact h2, #contact p, #contact label, #contact input, #contact textarea, #contact button, 
     #footer, #footer .logo, #footer ul li
-`, {interval: 90})
+`, {interval: 40})
