@@ -24,22 +24,3 @@ function scrollMenu() {
     window.addEventListener('scroll', surgirMenu)
 }
 scrollMenu()
-
-function scrollSuave() {
-    const links = document.querySelectorAll('.js-scrollSuave')
-    function initScrollSuave(event) {
-        event.preventDefault();
-        const href = event.currentTarget.getAttribute('href');
-        const section = document.querySelector(href);
-
-        section.scrollIntoView({
-            behavior: 'smooth',
-            block: 'end'
-        })
-    }
-
-links.forEach((item)=> {
-    item.addEventListener('click', initScrollSuave)
-})
-}
-scrollSuave()

@@ -268,6 +268,24 @@
                     a {
                         font-size: 1em;
                         padding: .875em 0;
+
+                        &::after {
+                            content: '';
+                            width: 0%;
+                            height: 2px;
+                            background-color: $primary-color;
+                            display: none;
+                            
+                            position: absolute;
+                            top: 40px;
+            
+                            border-radius: .25rem;
+                            transition: width .3s;
+                        }
+            
+                        &:hover::after {
+                            width: 100%;
+                        }
                     }
                 } 
             } 

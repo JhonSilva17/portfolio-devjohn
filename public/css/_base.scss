@@ -78,6 +78,10 @@ input,button,textarea {
     border: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* CLASSES GERAIS ============================= */
 .container {
     max-width: 80%;
