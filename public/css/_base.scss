@@ -83,6 +83,20 @@ html {
     scroll-behavior: smooth;
 }
 
+.js-scroll {
+    visibility: hidden;
+    opacity: 0;
+
+    transition: .3s;
+}
+
+.js-scroll.section-visible {
+    visibility: visible;
+    opacity: 1;
+
+    animation: surgirSection .7s ease-in-out;
+}
+
 /* CLASSES GERAIS ============================= */
 .container {
     max-width: 80%;
@@ -139,3 +153,24 @@ html {
     }
 }
 
+@keyframes scroll {
+    from {
+        opacity: 0;
+        transform: translateX(-40px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes surgirSection {
+    from {
+        opacity: .4;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

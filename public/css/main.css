@@ -67,6 +67,20 @@ html {
   scroll-behavior: smooth;
 }
 
+.js-scroll {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.js-scroll.section-visible {
+  visibility: visible;
+  opacity: 1;
+  -webkit-animation: surgirSection .7s ease-in-out;
+          animation: surgirSection .7s ease-in-out;
+}
+
 /* CLASSES GERAIS ============================= */
 .container {
   max-width: 80%;
@@ -137,6 +151,58 @@ html {
   }
 }
 
+@-webkit-keyframes scroll {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes scroll {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes surgirSection {
+  from {
+    opacity: .4;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes surgirSection {
+  from {
+    opacity: .4;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
 #header {
   padding: 2em 0;
   position: absolute;
@@ -150,7 +216,7 @@ html {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10001;
+  z-index: 1001;
   background: #314679;
   padding: 1em 0;
   -webkit-animation: surgirMenu .3s;
@@ -559,6 +625,7 @@ html {
     bottom: 0;
     right: -100%;
     width: 60%;
+    z-index: 10001;
     background: #314679;
     padding: 2em;
     display: -webkit-box;
